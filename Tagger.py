@@ -60,21 +60,21 @@ async def handler(event):
                                               Button.inline("Əʍrlər ❤️‍🩹" ,data="help")
                       ],
                       [
-                       Button.url('Gruᴩunᴀ ᴇlᴀvᴇ ᴇᴛ', 'https://t.me/LordTaggerBot?startgroup=a'),
-                       Button.url('Rəsʍi ᴋᴀnᴀl 🧖', 'https://t.me/LORD_Resmi')
+                       Button.url('Gruᴩunᴀ ᴇlᴀvᴇ ᴇᴛ', 'https://t.me/MafiaTaggerBot?startgroup=a'),
+                       Button.url('Rəsʍi ᴋᴀnᴀl 🧖', 'https://t.me/AlignakZona')
                       ],
                       [
-                       Button.url('Sᴀhiʙ 🦅', 'https://t.me/Rexxuxxnxx')
+                       Button.url('Sᴀhiʙ 🦅', 'https://t.me/TheMacroPem')
                       ],
                     ),
                   link_preview=False)
                   
 @client.on(events.NewMessage(pattern="^/qurup$"))
 async def help(event):
-  helptext = "Premium Söhbət Qurupları ⚡\n\nƏlaqə -  @Rexxuxxnxx"
+  helptext = "Premium Söhbət Qurupları ⚡\n\nƏlaqə -  @TheMacroPem"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('༒︎ Sυмqαуιт Cнαт🇦🇿 𓆙 ', 'https://t.me/sumqayitchattt')],
+                      [Button.url('༒︎ 𝗘𝗥𝗥𝗢𝗥  𝗧𝗲𝗮𝗺 𓆙 ', 'https://t.me/ER404Toplanma')],
                     ),
                     link_preview=False
                    )
@@ -657,7 +657,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"➤ - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("Tag prosesi uğurla dayandırıldı ✅\n\n**Buda sizin reklamınız ola bilər  @Rexxuxxnxx**✅")
+        await event.respond("Tag prosesi uğurla dayandırıldı ✅\n\n**Buda sizin reklamınız ola bilər  @AlignakZona**✅")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -675,7 +675,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"➤ - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("Tag prosesi uğurla dayandırıldı ✅\n\n**Buda sizin reklamınız ola bilər  @Rexxuxxnxx**✅")
+        await event.respond("Tag prosesi uğurla dayandırıldı ✅\n\n**Buda sizin reklamınız ola bilər  @AlignakZona**✅")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -705,14 +705,14 @@ async def mentionall(tagadmin):
   
 @client.on(events.NewMessage(pattern="^/bmelumat ?(.*)"))
 async def info(event):
-  await event.reply("**Salam Mənim haqqımda və sahibim haqqında məlumat\n\nPython: 1.7.5\nKütüphanem: Telethon\n\nSahibim: @Rexxuxxnxx Gruplarınızda Olan userleri tag etmək üçün yaradılmışam**",
+  await event.reply("**Salam Mənim haqqımda və sahibim haqqında məlumat\n\nPython: 1.7.5\nKütüphanem: Telethon\n\nSahibim: @TheMacroPem Gruplarınızda Olan userleri tag etmək üçün yaradılmışam**",
                     buttons=(
                       [
-                       Button.url('Məni qrupa əlavə et 🖤', 'https://t.me/LordTaggerBot?startgroup=a'),
-                       Button.url('Kanal 📣', 'https://t.me/LORD_Resmi')
+                       Button.url('Məni qrupa əlavə et 🖤', 'https://t.me/MafiaTaggerBot?startgroup=a'),
+                       Button.url('Kanal 📣', 'https://t.me/AlignakZona')
                       ],
                       [
-                       Button.url('Sahibim 🖥️', 'https://t.me/Rexxuxxnxx')
+                       Button.url('Sahibim 🖥️', 'https://t.me/TheMacroPem')
                       ],
                     ),
                     link_preview=False
@@ -735,7 +735,7 @@ async def son_durum(event):
     sender = await event.get_sender()
     if sender.id not in ozel_list:
       return
-    await event.respond(f"QOCA Tagger statistikalar 🤖\n\nToplam Grup: {len(grup_sayi)}\nAnlık Xidmət edilən Grup: {len(anlik_calisan)}")
+    await event.respond(f/ 𝑴𝒂𝒇𝒊𝒂 𝑻𝒂𝒈𝒈𝒆𝒓 statistikalar 🤖\n\nToplam Grup: {len(grup_sayi)}\nAnlık Xidmət edilən Grup: {len(anlik_calisan)}")
 
 
 @client.on(events.NewMessage(pattern='^(?i)/dur'))
@@ -746,5 +746,5 @@ async def cancel(event):
   if event.chat_id in rxyzdev_tagTot:await event.respond(f"❌**Etiket işlemi durduruldu.\n\n Etiketlerin Sayı: {rxyzdev_tagTot[event.chat_id]}**")
 
     
-print(">> Bot aktifdi bot hakda məlumatı @sumqayitchattt dan ala bilərsən Versiya 1.7.5")
+print(">> Bot aktifdi bot hakda məlumatı @TheMacroPem den ala bilərsən Versiya 1.7.5")
 client.run_until_disconnected()

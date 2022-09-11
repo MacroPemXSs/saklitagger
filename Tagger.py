@@ -708,11 +708,11 @@ async def info(event):
   await event.reply("**Salam Mənim haqqımda və sahibim haqqında məlumat\n\nPython: 1.7.5\nKütüphanem: Telethon\n\nSahibim: @Rexxuxxnxx Gruplarınızda Olan userleri tag etmək üçün yaradılmışam**",
                     buttons=(
                       [
-                       Button.url('Məni qrupa əlavə et 🖤', 'https://t.me/LordTaggerBot?startgroup=a'),
-                       Button.url('Kanal 📣', 'https://t.me/LORD_Resmi')
+                       Button.url('Məni qrupa əlavə et 🖤', 'https://t.me/MelisaTaggerBot?startgroup=a'),
+                       Button.url('Kanal 📣', 'https://t.me/AlignakZona')
                       ],
                       [
-                       Button.url('Sahibim 🖥️', 'https://t.me/Rexxuxxnxx')
+                       Button.url('Sahibim 🖥️', 'https://t.me/TheMacroPem')
                       ],
                     ),
                     link_preview=False
@@ -735,7 +735,7 @@ async def son_durum(event):
     sender = await event.get_sender()
     if sender.id not in ozel_list:
       return
-    await event.respond(f"QOCA Tagger statistikalar 🤖\n\nToplam Grup: {len(grup_sayi)}\nAnlık Xidmət edilən Grup: {len(anlik_calisan)}")
+    await event.respond(f"Melisa Tagger statistikalar 🤖\n\nToplam Grup: {len(grup_sayi)}\nAnlık Xidmət edilən Grup: {len(anlik_calisan)}")
 
 
 @client.on(events.NewMessage(pattern='^(?i)/dur'))

@@ -21,7 +21,7 @@ anlik_calisan = []
 tekli_calisan = []
 rxyzdev_tagTot = {}
 rxyzdev_initT = {}
-ozel_list = [5574488658]
+ozel_list = [5408887995]
 grup_sayi = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
@@ -32,11 +32,11 @@ async def start(event):
                                               Button.inline("Əʍrlər ❤️‍🩹", data="help")
                       ],
                       [
-                       Button.url('Gruᴩunᴀ ᴇlᴀvᴇ ᴇᴛ', 'https://t.me/LordTaggerBot?startgroup=a'),
-                       Button.url('Rəsʍi ᴋᴀnᴀl 🧖', 'https://t.me/LORD_Resmi')
+                       Button.url('Gruᴩunᴀ ᴇlᴀvᴇ ᴇᴛ', 'https://t.me/MelisaTagBot?startgroup=a'),
+                       Button.url('Rəsʍi ᴋᴀnᴀl 🧖', 'https://t.me/AlignakZona')
                       ],
                       [
-                       Button.url('Sᴀhiʙ 🦅', 'https://t.me/Rexxuxxnxx')
+                       Button.url('Sᴀhiʙ 🦅', 'https://t.me/TheMacroPem')
                       ],
                     ),
                     link_preview=False)
